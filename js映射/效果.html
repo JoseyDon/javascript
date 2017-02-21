@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript">
+function writeText(txt)
+{
+document.getElementById("desc").innerHTML=txt
+}
+</script>
+</head>
+
+<body>
+<img src="all.jpg" border="0" usemap="#planetmap" alt="Planets" />
+
+<map name="planetmap" id="planetmap">
+
+<area shape="circle" coords="370,107,20"
+onMouseOver="writeText('谢尔顿')"
+href ="Sheldon.jpg" target ="_blank" alt="Sheldon" />
+
+<area shape="circle" coords="86,86,20"
+onMouseOver="writeText('Bernadette')"
+href ="Bernadette.jpg" target ="_blank" alt="Bernadette" />
+
+<area shape="circle" coords="108,180,20"
+onMouseOver="writeText('Howard')"
+href ="Howard.jpg" target ="_blank" alt="Howard" />
+
+<area shape="circle" coords="187,127,20"
+onMouseOver="writeText('Leonard')"
+href ="Leonard.jpg" target ="_blank" alt="Leonard" />
+
+<area shape="circle" coords="277,107,20"
+onMouseOver="writeText('Penny')"
+href ="Penny.jpg" target ="_blank" alt="Penny" />
+
+<area shape="circle" coords="419,67,20"
+onMouseOver="writeText('amy')"
+href ="amy.jpg" target ="_blank" alt="amy" />
+
+<area shape="circle" coords="496,105,20"
+onMouseOver="writeText('Rajesh')"
+href ="Rajesh.jpg" target ="_blank" alt="Rajesh" />
+
+</map>
+
+<p id="desc"></p>
+
+</body>
+</html>
