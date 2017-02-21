@@ -1,50 +1,27 @@
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<script type="text/javascript">
-function writeText(txt)
-{
-document.getElementById("desc").innerHTML=txt
-}
-</script>
+	<title>js简单计时器</title>
+	<meta charset="utf-8">
 </head>
-
 <body>
-<img src="all.jpg" border="0" usemap="#planetmap" alt="Planets" />
+<input type="button" value="倒计时10秒" onclick="timedText()" name="">
+<input type="text" id="text" name="">
 
-<map name="planetmap" id="planetmap">
+<script type="text/javascript">
+	function timedText(){
+		var t1=setTimeout("document.getElementById('text').value='9秒'",1000);
+		var t2=setTimeout("document.getElementById('text').value='8秒'",2000);
+		var t3=setTimeout("document.getElementById('text').value='7秒'",3000);
+		var t4=setTimeout("document.getElementById('text').value='6秒'",4000);
+		var t5=setTimeout("document.getElementById('text').value='5秒'",5000);
+		var t6=setTimeout("document.getElementById('text').value='4秒'",6000);
+		var t7=setTimeout("document.getElementById('text').value='3秒'",7000);
+		var t8=setTimeout("document.getElementById('text').value='2秒'",8000);
+		var t9=setTimeout("document.getElementById('text').value='1秒'",9000);
+		var t10=setTimeout("alert('时间到了！')",10000);
 
-<area shape="circle" coords="370,107,20"
-onMouseOver="writeText('谢尔顿')"
-href ="Sheldon.jpg" target ="_blank" alt="Sheldon" />
-
-<area shape="circle" coords="86,86,20"
-onMouseOver="writeText('Bernadette')"
-href ="Bernadette.jpg" target ="_blank" alt="Bernadette" />
-
-<area shape="circle" coords="108,180,20"
-onMouseOver="writeText('Howard')"
-href ="Howard.jpg" target ="_blank" alt="Howard" />
-
-<area shape="circle" coords="187,127,20"
-onMouseOver="writeText('Leonard')"
-href ="Leonard.jpg" target ="_blank" alt="Leonard" />
-
-<area shape="circle" coords="277,107,20"
-onMouseOver="writeText('Penny')"
-href ="Penny.jpg" target ="_blank" alt="Penny" />
-
-<area shape="circle" coords="419,67,20"
-onMouseOver="writeText('amy')"
-href ="amy.jpg" target ="_blank" alt="amy" />
-
-<area shape="circle" coords="496,105,20"
-onMouseOver="writeText('Rajesh')"
-href ="Rajesh.jpg" target ="_blank" alt="Rajesh" />
-
-</map>
-
-<p id="desc"></p>
-
+	}
+</script>
 </body>
 </html>
