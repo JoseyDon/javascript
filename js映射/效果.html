@@ -1,27 +1,39 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title>js简单计时器</title>
-	<meta charset="utf-8">
-</head>
-<body>
-<input type="button" value="倒计时10秒" onclick="timedText()" name="">
-<input type="text" id="text" name="">
-
 <script type="text/javascript">
-	function timedText(){
-		var t1=setTimeout("document.getElementById('text').value='9秒'",1000);
-		var t2=setTimeout("document.getElementById('text').value='8秒'",2000);
-		var t3=setTimeout("document.getElementById('text').value='7秒'",3000);
-		var t4=setTimeout("document.getElementById('text').value='6秒'",4000);
-		var t5=setTimeout("document.getElementById('text').value='5秒'",5000);
-		var t6=setTimeout("document.getElementById('text').value='4秒'",6000);
-		var t7=setTimeout("document.getElementById('text').value='3秒'",7000);
-		var t8=setTimeout("document.getElementById('text').value='2秒'",8000);
-		var t9=setTimeout("document.getElementById('text').value='1秒'",9000);
-		var t10=setTimeout("alert('时间到了！')",10000);
-
-	}
+function writeText(txt)
+{
+document.getElementById("desc").innerHTML=txt
+}
 </script>
+</head>
+
+<body>
+<img src="all.jpg" border="0" usemap="#planetmap" alt="Planets" />
+
+<map name="planetmap" id="planetmap">
+
+<area shape="circle" coords="416,67,20"
+onMouseOver="writeText('Amy')"
+href ="amy.jpg" target ="_blank" alt="amy" />
+
+<area onmouseover="writeText('Bernadette')" href="Bernadette.jpg" shape="circle" coords="86,86,20" target="_blank" alt="Bernadette">
+
+<area shape="circle" coords="110,174,20"
+onMouseOver="writeText('Howard')"
+href ="Howard.jpg" target ="_blank" alt="Howard" />
+
+<area onmouseover="writeText('Sheldon')" href="Sheldon.jpg" shape="circle" coords="370,107,20" target="_blank" alt="Sheldon">
+
+<area onmouseover="writeText('Leonard')" href="Leonard.jpg" shape="circle" coords="187,127,20" target="_blank" alt="Leonard">
+
+<area onmouseover="writeText('Rajesh')" href="Rajesh.jpg" shape="circle" coords="496,105,20" target="_blank" alt="Rajesh">
+
+<area onmouseover="writeText('Penny')" href="Penny.jpg" shape="circle" coords="277,107,20" target="_blank" alt="Penny">
+
+</map>
+
+<p id="desc"></p>
+
 </body>
 </html>
