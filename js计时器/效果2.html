@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>计时器2</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<input type="button" value="开始计时" onclick="timedCount()">
+<input type="text" id="text" name="text">
+<input type="button" value="停止计时" onclick="stop()">
+
+<script type="text/javascript">
+	var c = 0;
+	var t;
+	function timedCount(){
+		document.getElementById('text').value=c;
+		c=c+1;
+		//重复此过程。
+		t=setTimeout("timedCount()",1000);
+	}
+	function stop(){
+		c=0;//c是全局变量，在timedCount()函数中被改变。
+		setTimeout("document.getElementById('text').value=0",0);
+		clearTimeout(t);
+	}
+</script>
+</body>
+</html>
