@@ -1,0 +1,146 @@
+html{font-size: 100%;}
+body{min-width: 100px;}
+body,ul,ol,p,h1,h2,h3,h4,h5,dl,dd,form,input{
+	padding: 0;
+	margin: 0;
+	font-family: arial;
+}
+li{list-style: none;}
+img{border: none;}
+a {text-decoration: none;}
+body{
+	background: url(../images/background.jpg);
+}
+header{
+	width: 1200px;
+	margin:0 auto;
+}
+header nav{
+	width: 1200px;
+	height: 30px;
+	background: #ddd;
+}
+header nav li{
+	display: inline;
+}
+header nav li a{
+	display: block;
+	float: left;
+	padding: 5px 90px;
+	border-right: 1px solid;
+	color: #a3a3a3;
+}
+.a-last{
+	border-right: 0px;
+}
+article{
+	width: 1200px;
+	margin: 0 auto;
+	background: #ddd;
+}
+article h1{
+	color: #c5c4c9;
+	padding:10px 0 0 90px;
+}
+article p{
+	color: #a3a3a3;
+	padding:10px 0 0 90px;
+}
+header nav a.here:link,
+header nav a.here:visited,
+header nav a.here:hover,
+header nav a.here:active{
+	color: #ddd;
+	background: #a3a3a3;
+}
+article a:link{
+	color: #ddd;
+	background: #a3a3a3;
+}
+article a:visited{
+	color: #ddd;
+	background: #a3a3a3;
+}
+a:hover {
+  color: #ddd;
+  background-color: #a3a3a3;
+}
+a:active {
+  color: #ddd;
+  background-color: #a3a3a3;
+}
+#slideshow{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top:20px;
+}
+#preview{
+	position: absolute;
+	border-width: 0;
+	outline-width: 0;
+}
+#hobby,#music{
+	margin: 10px 0 5px 20px;
+}
+#about-nav li{
+	margin: 0 0 10px 90px;
+}
+#ImagesGallery li{
+	float: left;
+	margin: 10px 90px;
+}
+
+#placeholder{
+	display: block;
+	clear: both;
+	margin-left: 90px;
+}
+table{
+	margin: auto;
+	border:1px solid #a3a3a3;
+}
+caption{
+	margin: auto;
+	padding: .2em;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #a3a3a3;
+}
+th{
+	font-weight: normal;
+	font-style: italic;
+	text-align: left;
+	border: 1px dotted #a3a3a3;
+	background: #d7dbde;
+	color: #a3a3a3;
+}
+th,td{
+	width: 10em;
+	padding: .5em;
+	color: #a3a3a3;
+}
+.intro{
+	font-weight: bold;
+	font-size:1.4em;
+}
+.odd{
+	background: #cdced0;
+}
+tr.highlight td{
+	color:#ddd;
+	background:#a3a3a3;
+}
+label{
+	display: block;
+}
+fieldset{
+	border:0;
+}
+input[name="submit"]
+{
+	margin-left: 90px;
+	margin-top: 10px;
+}
