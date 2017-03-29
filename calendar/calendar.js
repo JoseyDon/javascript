@@ -105,7 +105,14 @@ ico.onclick = function(){
         _tds[i].className = 'otherMonth';
       }
     }
-    text.value=titleStr;
+    var tab = document.getElementById('calendarTable');
+    tab.onclick = function(e) {
+    var target = e.srcElement ? e.srcElement : e.target;
+    text.value=titleStr+target.innerHTML+'日';
+    calendar.style.display = 'none';
+    calendar.innerHTML="";
+    return;
+    }
   }
   /**
    * 绑定上个月下个月事件
@@ -173,4 +180,5 @@ ico.onclick = function(){
     _d = (_d > 9) ? ("" + _d) : ("0" + _d);
     return _year + _month + _d;
   }
+
 };
